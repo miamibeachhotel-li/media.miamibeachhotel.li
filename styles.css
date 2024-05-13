@@ -1,0 +1,105 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    color: #f0f0f0; 
+    margin: 0; 
+    padding: 0; 
+    padding-top: constant(safe-area-inset-top); /* Handle top safe area */
+    padding-bottom: constant(safe-area-inset-bottom); /* Handle bottom safe area */
+    padding-left: constant(safe-area-inset-left); /* Handle left safe area */
+    padding-right: constant(safe-area-inset-right); /* Handle right safe area */
+}
+
+header {
+    background-color: #000; 
+    color: #fff;
+    height: 201px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    max-height: 270px; 
+}
+
+#slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center; /* Center the images */
+    margin-top: 20px; /* Adjusted margin top */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    text-align: center; /* Center the images */
+}
+
+img {
+    margin: 0 auto; /* Center the images */
+    display: block; /* Ensure the images are block-level elements for centering */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@media screen and (max-width: 460px) {
+    header {
+        height: 100px;
+    }
+    .header-logo {
+        max-height: 50px; /* Adjust the maximum height of the image */
+    }
+}
+
+@media screen and (max-width: 595px) {
+    header {
+        height: 150px;
+    }
+    .header-logo {
+        max-height: 150px; /* Adjust the maximum height of the image */
+    }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (min-width: 768px) {
+    .button {
+        width: 80%; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .button {
+        width: 80%; 
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 2048px) {
+    .
