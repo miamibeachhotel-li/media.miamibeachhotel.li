@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://theblackoutszn.miamibeachhotel.li/icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <title>Slideshow Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your external CSS file -->
 </head>
 <body>
 
 <header>
-    <a href="https://contact.miamibeachhotel.li">
+    <a href="https://theblackoutszn.miamibeachhotel.li">
         <img src="https://theblackoutszn.miamibeachhotel.li/miamibeachhotelV2.png" alt="Logo" class="header-logo"> <!-- Added class for styling -->
     </a>
 </header>
 
-<div id="slideshow-container">
+<div id="slideshow-container" class="button-container">
+    <button class="button prev" onclick="plusSlides(-1)">&#10094;</button>
     <div class="slide fade">
         <img src="img_lake_truebsee.jpg" alt="lake truebsee">
     </div>
@@ -29,9 +30,7 @@
         <img src="img_gondel_engelberg.JPEG" alt="gondel">
     </div>
     <!-- Add more slides as needed -->
-
-    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    <button class="button next" onclick="plusSlides(1)">&#10095;</button>
 </div>
 
 <script>
