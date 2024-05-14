@@ -14,14 +14,14 @@ body {
 header {
     background-color: #000; 
     color: #fff;
-    height: 100px; /* Adjusted header height */
+    height: 201px; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .header-logo {
-    max-height: 50px; /* Adjusted logo height */
+    max-height: 270px; 
 }
 
 #slideshow-container {
@@ -62,35 +62,48 @@ img {
 }
 
 .prev {
-    left: 10px; /* Adjusted button position */
+    left: 0;
 }
 
 .next {
-    right: 10px; /* Adjusted button position */
+    right: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
     header {
-        height: 70px; /* Adjusted header height */
+        height: 100px;
     }
     .header-logo {
-        max-height: 40px; /* Adjusted logo height */
+        max-height: 50px; /* Adjust the maximum height of the image */
     }
 }
 
 @media screen and (max-width: 595px) {
     header {
-        height: 120px; /* Adjusted header height */
+        height: 150px;
     }
     .header-logo {
-        max-height: 70px; /* Adjusted logo height */
+        max-height: 150px; /* Adjust the maximum height of the image */
     }
 }
 
 /* Media Queries for responsiveness */
-@media screen and (min-width: 1024px) {
-    .prev, .next {
-        font-size: 24px; /* Adjusted button font size */
-        padding: 15px; /* Adjusted button padding */
+@media screen and (min-width: 768px) {
+    .button {
+        width: 80%; 
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .button {
+        width: 80%; 
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 2048px) {
+    .button {
+    width: 75%; 
+        font-size: 30px;
+
+    }}
