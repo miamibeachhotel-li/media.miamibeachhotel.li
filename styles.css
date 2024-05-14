@@ -14,14 +14,14 @@ body {
 header {
     background-color: #000; 
     color: #fff;
-    height: 201px; 
+    height: 100px; /* Adjusted header height */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .header-logo {
-    max-height: 270px; 
+    max-height: 50px; /* Adjusted logo height */
 }
 
 #slideshow-container {
@@ -69,41 +69,28 @@ img {
     right: 10px; /* Adjusted button position */
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
     header {
-        height: 100px;
+        height: 70px; /* Adjusted header height */
     }
     .header-logo {
-        max-height: 50px; /* Adjust the maximum height of the image */
+        max-height: 40px; /* Adjusted logo height */
     }
 }
 
 @media screen and (max-width: 595px) {
     header {
-        height: 150px;
+        height: 120px; /* Adjusted header height */
     }
     .header-logo {
-        max-height: 150px; /* Adjust the maximum height of the image */
+        max-height: 70px; /* Adjusted logo height */
     }
 }
 
 /* Media Queries for responsiveness */
-@media screen and (min-width: 768px) {
-    .button {
-        width: 80%; 
-    }
-}
-
 @media screen and (min-width: 1024px) {
-    .button {
-        width: 80%; 
-        font-size: 27px;
-    }
-}
-
-@media screen and (min-width: 2048px) {
-    .button {
-        width: 75%; 
-        font-size: 30px;
+    .prev, .next {
+        font-size: 24px; /* Adjusted button font size */
+        padding: 15px; /* Adjusted button padding */
     }
 }
