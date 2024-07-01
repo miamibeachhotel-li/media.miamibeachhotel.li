@@ -1,8 +1,8 @@
 /* Common styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(56,182,255); 
-    color: #f0f0f0; 
+    /* background-color: rgb(56,182,255); */
+    background-color: rgb(18, 141, 217);
     margin: 0; 
     padding: 0; 
     padding-top: constant(safe-area-inset-top); /* Handle top safe area */
@@ -12,12 +12,23 @@ body {
 }
 
 header {
-    background-color: rgb(56,182,255); 
-    color: #fff;
+    /* background-color: rgb(56,182,255); */
+    background-color: inherit;
     height: 201px; 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5em;
+    color:inherit;
+
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:rgb(0, 21, 255);
 }
 
 .header-logo {
