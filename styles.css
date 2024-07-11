@@ -115,32 +115,45 @@ img {
     }
 }
 
-@media screen and (max-width: 595px) {
-    header {
-        height: 150px;
-    }
-    .header-logo {
-        max-height: 150px; /* Adjust the maximum height of the image */
-    }
-}
+
 
 /* Media Queries for responsiveness */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .button {
         width: 80%; 
     }
-}
 
-@media screen and (min-width: 1024px) {
-    .button {
-        width: 80%; 
-        font-size: 27px;
+    .normal-tmp-headers h1 {
+        font-size: 3em;
+        
+    
+    }
+    .normal-tmp-headers h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5em;
+    }
+
+    .normal-tmp-headers a:hover {
+        border: 2px blue  solid;
+    }
+
+    .prev, .next {
+        font-size: 60px;
+        padding: 5px;
+
+    }
+
+    .slide {
+        display: none;
+        width: 100%;
+        text-align: center; /* Center the images */
+        
+    }
+
+    #slideshow-container {
+        position: relative;
+        max-width: 500px;
     }
 }
 
-@media screen and (min-width: 2048px) {
-    .button {
-    width: 75%; 
-        font-size: 30px;
 
-    }}
